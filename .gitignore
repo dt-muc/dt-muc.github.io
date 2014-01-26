@@ -1,0 +1,10 @@
+.DS_Store
+build/*
+.idea
+external/*.framework
+*.swp
+xcuserdata
+project.xcworkspace
+*.xccheckout
+Podfile.lock
+Pods/*
