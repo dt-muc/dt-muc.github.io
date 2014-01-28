@@ -1,20 +1,19 @@
-$globalWidth: 102.4rem;
+$globalWidth: 1024px;
 $tngBlue: #0563A5;
 
-$padding: 4rem;
+$padding: 40px;
 $width: $globalWidth - 2 * $padding;
 
 @mixin alignVerticallyWithWidth($val) {
   position: absolute;
 
   width: $val;
-  left: 50%;
   top: 50%;
 
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
 }
 
 @mixin helveticaNeueBold {
@@ -46,6 +45,18 @@ html {
 
 body {
   text-rendering: optimizeLegibility;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.important-info {
+  @include helveticaNeueBold;
 }
 
 #container {
@@ -84,17 +95,11 @@ body {
     @include alignVerticallyWithWidth($width);
 
     //    background-color: green;
-
-    .important-info {
-      @include helveticaNeueBold;
-    }
   }
 }
 
 #description {
   padding: 1.5 * $padding $padding; // hm... TODO
-
-  //  background-color: blue;
 
   a {
     color: black;
@@ -108,8 +113,49 @@ body {
     margin-bottom: $padding;
   }
 
-  #description-title {
+  .title {
     @include bigFont;
+  }
+
+  p.organisation {
+    margin-bottom: $padding / 2;
+  }
+
+  div.organisation {
+    font-size: 2rem;
+    line-height: 2.75rem;
+
+    div.organizer {
+      position: relative;
+      display: inline-block;
+      width: $width / 2 - 40px;
+
+      &:nth-child(odd) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(even) {
+        margin-left: 20px;
+      }
+
+      margin-bottom: 20px;
+
+//      background-color: bisque;
+
+      a {
+        border: none;
+      }
+
+      img {
+        border-radius: 4px;
+        @include alignVerticallyWithWidth(71px);
+      }
+
+      .organizer-info {
+        padding-left: 71px + 20px;
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -128,15 +174,8 @@ body {
 
   @include normalFontSize;
 
-  ul {
-    list-style: none;
-
-//    background-color: firebrick;
-
-    li {
-      display: inline-block;
-      padding: 0 $padding;
-    }
+  li {
+    padding: 0 $padding;
   }
 
   hr {
