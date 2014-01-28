@@ -23,14 +23,14 @@ $width: $globalWidth - 2 * $padding;
 
 @mixin bigFont {
   @include helveticaNeueBold;
-  font-size: 14.4rem;
-  line-height: 15rem;
-  letter-spacing: -1rem;
+  font-size: 14.4em;
+  line-height: 1.05em;
+  letter-spacing: -0.07em;
 }
 
 @mixin normalFontSize {
-  font-size: 2.4rem;
-  line-height: 3.5rem;
+  font-size: 2.4em;
+  line-height: 1.5em;
 }
 
 * {
@@ -40,7 +40,7 @@ $width: $globalWidth - 2 * $padding;
 
 html {
   font-weight: lighter;
-  font: 10px/1 "HelveticaNeue-Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 10px/1 "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -70,7 +70,7 @@ ul {
 
 #splash {
   position: relative;
-  height: 72rem;
+  height: 72em;
   padding: 0 $padding;
 
   background-image: url("munich.jpg");
@@ -87,9 +87,9 @@ ul {
   }
 
   #next-meetup {
-    font-size: 2.8rem;
-    line-height: 4rem;
-    letter-spacing: -0.1rem;
+    font-size: 2.8em;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
     text-align: right;
 
     @include alignVerticallyWithWidth($width);
@@ -122,8 +122,8 @@ ul {
   }
 
   div.organisation {
-    font-size: 2rem;
-    line-height: 2.75rem;
+    font-size: 2em;
+    line-height: 1.5em;
 
     div.organizer {
       position: relative;
@@ -172,7 +172,8 @@ ul {
     text-decoration: none;
   }
 
-  @include normalFontSize;
+  font-size: 2em;
+  line-height: 1.5em;
 
   li {
     padding: 0 $padding;
@@ -187,6 +188,6 @@ ul {
   }
 
   #colophon {
-    font-size: 1.4rem;
+    font-size: 0.7em;
   }
 }
