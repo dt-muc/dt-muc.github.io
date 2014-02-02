@@ -120,7 +120,8 @@ a.map {
   line-height: 1.5em; }
   #footer a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    border: none; }
   #footer li {
     padding: 0 40px; }
   #footer hr {
