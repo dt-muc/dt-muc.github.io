@@ -55,8 +55,18 @@ ul {
   }
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px black dotted;
+}
+
 .important-info {
   @include helveticaNeueBold;
+}
+
+a.map {
+  border: none;
 }
 
 #container {
@@ -105,7 +115,7 @@ ul {
   a {
     color: black;
     text-decoration: none;
-    border-bottom: 1px gray solid;
+    border-bottom: 1px gray dotted;
   }
 
   p {
@@ -141,7 +151,7 @@ ul {
 
       margin-bottom: 20px;
 
-//      background-color: bisque;
+      //      background-color: bisque;
 
       a {
         border: none;
