@@ -23,7 +23,7 @@ a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
-a.map {
+a.icon-link {
   border: none; }
 
 #container {
@@ -84,32 +84,31 @@ a.map {
     letter-spacing: -0.07em; }
   #description p.organisation {
     margin-bottom: 20px; }
-  #description div.organisation {
+  #description div.person {
     font-size: 2em;
-    line-height: 1.5em; }
-    #description div.organisation div.organizer {
-      position: relative;
-      display: inline-block;
-      width: 432px;
-      margin-bottom: 20px; }
-      #description div.organisation div.organizer:nth-child(odd) {
-        margin-right: 20px; }
-      #description div.organisation div.organizer:nth-child(even) {
-        margin-left: 20px; }
-      #description div.organisation div.organizer a {
-        border: none; }
-      #description div.organisation div.organizer img {
-        border-radius: 4px;
-        position: absolute;
-        width: 71px;
-        top: 50%;
-        transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%); }
-      #description div.organisation div.organizer .organizer-info {
-        padding-left: 91px;
-        display: inline-block; }
+    line-height: 1.5em;
+    position: relative;
+    display: inline-block;
+    width: 432px;
+    margin-bottom: 20px; }
+    #description div.person:nth-child(odd) {
+      margin-right: 20px; }
+    #description div.person:nth-child(even) {
+      margin-left: 20px; }
+    #description div.person a {
+      border: none; }
+    #description div.person img {
+      border-radius: 4px;
+      position: absolute;
+      width: 71px;
+      top: 50%;
+      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%); }
+    #description div.person .person-info {
+      padding-left: 91px;
+      display: inline-block; }
 
 #footer {
   padding: 60px 40px;

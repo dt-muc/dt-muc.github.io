@@ -65,7 +65,7 @@ a {
   @include helveticaNeueBold;
 }
 
-a.map {
+a.icon-link {
   border: none;
 }
 
@@ -132,40 +132,38 @@ a.map {
     margin-bottom: $padding / 2;
   }
 
-  div.organisation {
+  div.person {
     font-size: 2em;
     line-height: 1.5em;
 
-    div.organizer {
-      position: relative;
+    position: relative;
+    display: inline-block;
+    width: $width / 2 - 40px;
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 20px;
+    }
+
+    margin-bottom: 20px;
+
+    //      background-color: bisque;
+
+    a {
+      border: none;
+    }
+
+    img {
+      border-radius: 4px;
+      @include alignVerticallyWithWidth(71px);
+    }
+
+    .person-info {
+      padding-left: 71px + 20px;
       display: inline-block;
-      width: $width / 2 - 40px;
-
-      &:nth-child(odd) {
-        margin-right: 20px;
-      }
-
-      &:nth-child(even) {
-        margin-left: 20px;
-      }
-
-      margin-bottom: 20px;
-
-      //      background-color: bisque;
-
-      a {
-        border: none;
-      }
-
-      img {
-        border-radius: 4px;
-        @include alignVerticallyWithWidth(71px);
-      }
-
-      .organizer-info {
-        padding-left: 71px + 20px;
-        display: inline-block;
-      }
     }
   }
 }
