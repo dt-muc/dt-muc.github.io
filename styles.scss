@@ -124,6 +124,10 @@ a.icon-link {
     margin-bottom: $padding;
   }
 
+  p.talk-title {
+    font-weight: bold;
+  }
+
   .title {
     @include bigFont;
   }

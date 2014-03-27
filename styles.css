@@ -76,6 +76,8 @@ a.icon-link {
     font-size: 2.4em;
     line-height: 1.5em;
     margin-bottom: 40px; }
+  #description p.talk-title {
+    font-weight: bold; }
   #description .title {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
