@@ -166,6 +166,14 @@ a.icon-link {
       display: inline-block;
     }
   }
+
+  hr {
+    width: 100%;
+    border: none;
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: $padding auto;
+  }
 }
 
 #footer {

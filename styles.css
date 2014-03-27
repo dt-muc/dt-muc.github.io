@@ -109,6 +109,12 @@ a.icon-link {
     #description div.person .person-info {
       padding-left: 91px;
       display: inline-block; }
+  #description hr {
+    width: 100%;
+    border: none;
+    background-color: #e5e5e5;
+    height: 1px;
+    margin: 40px auto; }
 
 #footer {
   padding: 60px 40px;
