@@ -118,6 +118,10 @@ a.icon-link {
     border-bottom: 1px gray dotted;
   }
 
+  a.icon-link {
+    border: none;
+  }
+
   p {
     @include normalFontSize;
 
