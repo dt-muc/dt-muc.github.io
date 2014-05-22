@@ -4,12 +4,12 @@ PRODID:-//www.marudot.com//iCal Event Maker
 X-WR-CALNAME:DT-MUC Stammtisch Nr. 2
 X-WR-TIMEZONE:Europe/Berlin
 BEGIN:VEVENT
-DTSTAMP:20140521T192022Z
-UID:20140521T192022Z-2080034612@marudot.com
+DTSTAMP:20140522T055203Z
+UID:20140522T055203Z-1302836319@marudot.com
 DTSTART;TZID=Europe/Berlin:20140604T190000
 DTEND;TZID=Europe/Berlin:20140604T210000
 SUMMARY:DT-MUC Vortragsabend
 DESCRIPTION:Dr. Stephan Raimer: Werkzeugkasten für Design Thinking - Methoden für zielgerichtete Innovation
-LOCATION:AutoScout24\, https://goo.gl/maps/Civ4C
+LOCATION:AutoScout24 (Turm D\, Stockwerk 14)\, https://goo.gl/maps/Civ4C
 END:VEVENT
 END:VCALENDAR
