@@ -182,6 +182,16 @@ a.icon-link {
     height: 1px;
     margin: $padding auto;
   }
+
+  ul {
+    @include normalFontSize;
+    list-style: circle;
+    padding-bottom: $padding;
+
+    li {
+      display: list-item;
+    }
+  }
 }
 
 #footer {
